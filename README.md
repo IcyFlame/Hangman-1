@@ -1,11 +1,7 @@
 Hangman
 ========
 
-Hangman game for Firefox OS. 
+Hangman game that runs in any web browser. Using JS, HTML andd CSS for styling.
 
-Just started developing this game! Stay tuned for updates.
-
-#Incomplete
-
-Devs:
-- Yashasvi Pant & Prashish Rajbhandari
+Developers:
+- Yashasvi Pant, Prashish Rajbhandari(GUI) and Siddharth Kannan.
