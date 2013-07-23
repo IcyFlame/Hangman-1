@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+ body {
+    background-image: url('../hangmenu.jpg');
+}
+#start {
+    
+	position:fixed;
+   left: 45%;
+   top: 40%;
+   margin-top: 0px;
+   margin-left: 0px;
+}
+#help {
+    
+   position:fixed;
+   left: 45%;
+   top: 50%;
+   margin-top: 0px;
+   margin-left: 0px;
+}
+#exit {
+    
+   position:fixed;
+   left: 45%;
+   top: 60%;
+   margin-top: 0px;
+   margin-left: 0px;
+}
+input[type="button"] {
+    font-family: 'Snap ITC';
+    color: #FF0000;
+    height: 37px;
+    width: 151px;
+    font-size: 13px;
+    font-style: normal;
+    background-color: #3399FF;
+	
+}
+	
+	
+}

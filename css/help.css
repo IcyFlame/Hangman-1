@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+ body {
+    background-image: url('../help.jpg');
+}
+#menu
+{
+    color: #050;
+    font: bold medium 'Times New Roman' , Times, serif;
+    background-color: #fed;
+    border: 1px solid;
+    border-color: #696 #363 #363 #696;
+}

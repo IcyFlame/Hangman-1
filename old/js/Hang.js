@@ -99,7 +99,7 @@ function setValue(values, ln) {
             len++;
         }
     }
-    
+
     if (j == 0)
         wrongGuess++;
 
