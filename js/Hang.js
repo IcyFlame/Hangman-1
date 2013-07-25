@@ -72,7 +72,11 @@ $(document).ready(function () {
 
     $(".inputBtn").click(function() {
         j = 0;
+        
+        this.setAttribute("disabled","disabled");
         hideIt(this.value);
+        
+        
         setValue(this.value, length);
         changeImage("#img");
     })
