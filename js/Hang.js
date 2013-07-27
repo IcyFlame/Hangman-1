@@ -61,7 +61,7 @@ var len = 0;
 $(document).ready(function () {
     // chooses a word randomly
     var ran = chooseWord();
-    console.log(ran);
+    //console.log(ran);
     var length = ran.length; 
     ranfix = ran;
 
@@ -72,9 +72,8 @@ $(document).ready(function () {
 
     $(".inputBtn").click(function() {
         j = 0;
-
 	this.setAttribute("disabled","disabled");
-	
+	this.setAttribute("style","background-color:rgb(255,255,0)");
         hideIt(this.value);
         setValue(this.value, length);
         changeImage("#img");
@@ -107,7 +106,7 @@ function setValue(values, ln) {
         wrongGuess++;
 
     if (len >= ln) {
-        $("#resultShow").val("Yeah !!!! Good Job");
+        $("#resultShow").val("Congrats! You won the game!!");
         $("#input").attr("disabled", "true");
         $("input").not("#restart").attr('disabled', 'true');
     }

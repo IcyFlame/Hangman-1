@@ -4,98 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>Hangman</title>
-
     <link rel="stylesheet" type="text/css" href="css/style.css">
-   <script src="js/jquery-1.7.1.js"></script>-->    
-   <script src="js/Hang.js"></script>
+    <script src="js/jquery-1.7.1.js"></script>-->    
+    <script src="js/Hang.js"></script>
 </head>
 
-<body  >
+<body>
+
+
     <div id="game">
+
      
-    <img  id="img" src="img/hang0.gif" /><br /> 
-    
+        <img  id="img" src="img/hang0.gif" /><br /> 
+
         <input type="button"id="group"  style=" color:red; width: 300px;"/>
-         <br /><br/>
+
+        <br /><br/>
+             
+            
+        <div id="Content">
+
+
+        <input id="word1" type="button" value="" disabled="disabled" />
+        <input id="word2" type="button" value="" disabled="disabled"/>
+        <input id="word3" type="button" value="" disabled="disabled"/>
+        <input id="word4" type="button" value=""disabled="disabled" />
+        <input id="word5" type="button" value=""disabled="disabled" />
+        <input id="word6" type="button" value=""disabled="disabled" />
+        <input id="word7" type="button" value=""disabled="disabled" />
+        <input id="word8" type="button" value=""disabled="disabled" />
+        <input id="word9" type="button" value=""disabled="disabled" />
+        <input id="word10" type="button" value=""disabled="disabled" />
+        <input id="word11" type="button" value=""disabled="disabled" />
+        <input id="word12" type="button" value=""disabled="disabled" />
+        <input id="word13" type="button" value=""disabled="disabled" />
+        <input id="word14" type="button" value=""disabled="disabled" />
+        <input id="word15" type="button" value=""disabled="disabled" />
+        <input id="word16" type="button" value="" disabled="disabled" />
+        <input id="word17" type="button" value="" disabled="disabled"/>
+        <input id="word18" type="button" value="" disabled="disabled"/>
+        <input id="word19" type="button" value=""disabled="disabled" />
+        <input id="word20" type="button" value=""disabled="disabled" />
+        <input id="word21" type="button" value=""disabled="disabled" />
+        <input id="word22" type="button" value=""disabled="disabled" />
+        <input id="word23" type="button" value=""disabled="disabled" />
+        <input id="word24" type="button" value=""disabled="disabled" />
+        <input id="word25" type="button" value=""disabled="disabled" />
+
+          
+        </div >
          
-        
-    <div id="Content">
-    <input id="word1" type="button" value="" disabled="disabled" />
-    <input id="word2" type="button" value="" disabled="disabled"/>
-    <input id="word3" type="button" value="" disabled="disabled"/>
-    <input id="word4" type="button" value=""disabled="disabled" />
-    <input id="word5" type="button" value=""disabled="disabled" />
-    <input id="word6" type="button" value=""disabled="disabled" />
-    <input id="word7" type="button" value=""disabled="disabled" />
-    <input id="word8" type="button" value=""disabled="disabled" />
-    <input id="word9" type="button" value=""disabled="disabled" />
-    <input id="word10" type="button" value=""disabled="disabled" />
-    <input id="word11" type="button" value=""disabled="disabled" />
-    <input id="word12" type="button" value=""disabled="disabled" />
-    <input id="word13" type="button" value=""disabled="disabled" />
-    <input id="word14" type="button" value=""disabled="disabled" />
-    <input id="word15" type="button" value=""disabled="disabled" />
-    <input id="word16" type="button" value="" disabled="disabled" />
-    <input id="word17" type="button" value="" disabled="disabled"/>
-    <input id="word18" type="button" value="" disabled="disabled"/>
-    <input id="word19" type="button" value=""disabled="disabled" />
-    <input id="word20" type="button" value=""disabled="disabled" />
-    <input id="word21" type="button" value=""disabled="disabled" />
-    <input id="word22" type="button" value=""disabled="disabled" />
-    <input id="word23" type="button" value=""disabled="disabled" />
-    <input id="word24" type="button" value=""disabled="disabled" />
-    <input id="word25" type="button" value=""disabled="disabled" />
-   
-      
-          </div >
-     
-      <br />
-    
-    <div id="Input" ">
-      
-    <input class="inputBtn" type="button" value="A" />
-    <input class="inputBtn" type="button" value="B"  />
-    <input class="inputBtn" type="button" value="C" />
-    <input class="inputBtn" type="button" value="D" />
-    <input class="inputBtn" type="button" value="E" />
-    <input class="inputBtn" type="button" value="F" />
-    <input class="inputBtn" type="button" value="G" />
-    <input class="inputBtn" type="button" value="H" />
-    <input class="inputBtn" type="button" value="I" />
-    <input class="inputBtn" type="button" value="J" />
-    <input class="inputBtn" type="button" value="K" />
-    <input class="inputBtn" type="button" value="L" />
-    <input class="inputBtn" type="button" value="M" />
-    <input class="inputBtn" type="button" value="N" />
-    <input class="inputBtn" type="button" value="O" />
-    <input class="inputBtn" type="button" value="P" />
-    <input class="inputBtn" type="button" value="Q" />
-    <input class="inputBtn" type="button" value="R" />
-    <input class="inputBtn" type="button" value="S" />
-    <input class="inputBtn" type="button" value="T" />
-    <input class="inputBtn" type="button" value="U" />
-    <input class="inputBtn" type="button" value="V" />
-    <input class="inputBtn" type="button" value="W" />
-    <input class="inputBtn" type="button" value="X" />
-    <input class="inputBtn" type="button" value="Y" />
-    <input class="inputBtn" type="button" value="Z" />
-   </div>
-     <br />
-   <input type="button" value="" id="resultShow" disabled="disabled"  style=" color:red; width: 700px;"><br /> <br/>
-    <input id="restart" type="button" value="Restart" style="width: 80px;" onClick="location.href = 'index.html'"/>   
+        <br />
+
+        <div id="Input" ">
+          
+        <input class="inputBtn" type="button" value="A" />
+        <input class="inputBtn" type="button" value="B"  />
+        <input class="inputBtn" type="button" value="C" />
+        <input class="inputBtn" type="button" value="D" />
+        <input class="inputBtn" type="button" value="E" />
+        <input class="inputBtn" type="button" value="F" />
+        <input class="inputBtn" type="button" value="G" />
+        <input class="inputBtn" type="button" value="H" />
+        <input class="inputBtn" type="button" value="I" />
+        <input class="inputBtn" type="button" value="J" />
+        <input class="inputBtn" type="button" value="K" />
+        <input class="inputBtn" type="button" value="L" />
+        <input class="inputBtn" type="button" value="M" />
+        <input class="inputBtn" type="button" value="N" />
+        <input class="inputBtn" type="button" value="O" />
+        <input class="inputBtn" type="button" value="P" />
+        <input class="inputBtn" type="button" value="Q" />
+        <input class="inputBtn" type="button" value="R" />
+        <input class="inputBtn" type="button" value="S" />
+        <input class="inputBtn" type="button" value="T" />
+        <input class="inputBtn" type="button" value="U" />
+        <input class="inputBtn" type="button" value="V" />
+        <input class="inputBtn" type="button" value="W" />
+        <input class="inputBtn" type="button" value="X" />
+        <input class="inputBtn" type="button" value="Y" />
+        <input class="inputBtn" type="button" value="Z" />
+
+        </div>
+
+
+        <br />
+
+        <input type="button" value="Letters Already guessed are highlighted in yellow" id="lettersGuessed" disabled="disabled" style=" color:red; width:700px;"/><br/><br/>
+
+        <input type="button" value="" id="resultShow" disabled="disabled"  style=" color:red; width: 700px;"/><br /> <br/>
+        <input id="restart" type="button" value="Restart" style="width: 80px;" onClick="location.href = 'index.html'"/>   
 
     </div>
 
-<div id="footer">
+    <div id="footer">
 
-	<i>Created by <a href="http://prashishrajbhandari.com.np/">Prashish Rajbhandari</a> and <a href="http://siddharthkannan.webs.com">Siddharth Kannan</a>
+        <i>Created by <a href="http://prashishrajbhandari.com.np/">Prashish Rajbhandari</a> and <a href="http://siddharthkannan.webs.com">Siddharth Kannan</a>
 
-</div>
-    
-    
-
-    
-    
+    </div> 
     
 </body>
 </html>
