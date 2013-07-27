@@ -26,14 +26,34 @@ var collection = [
         'words' : ['CHELSEA','BARCELONA','BAYERN MUNICH','EVERTON','WIGAN','ARSENAL','LIVERPOOL','WEST HAM UNITED','MANCHESTER UNITED','MANCHESTER CITY','ASTON VILLA','TOTTENHAM HOTSPUR','QUEEN PARK RANGERS','NEWCASTLE UNITED','WEST BROMWICH ALBION','SWANSEA CITY','STOKE CITY','FULHAM','SOUTHAMPTON','SUNDERLAND','NORWICH CITY','WIGAN ATHLETIC','READING','REAL MADRID','ATHLETICO MADRID','ATHLETICO BILBAO','VALENSIA','GALATASARAHY','PARIS SAINT GERMAN','BORRUSIA DORTMUND'],
         'group' : 'Name of Football Club'
     }
+
 ]
 
 /*
-var Fplayer=['FRANK LAMPARD','DIDIER DROGBA','PTR CECH','JUAN MATA','JOHN TERRY','BRANISLAV IVANOVIC','EDEN HAZARD','FERNANDO TORRES','ROBERT LEWANDOWISKI','DEMBA BA','DAVID LUIZ','VICTOR MOSES','ASHLEY COLE','PHILIP LAHM','THOMAS MULLER','LEONEL ANDRES MESSI','ANDRES INIESTA','XAVI','XABI ALONSO','PIQUE','VICTOR VALDES','IKER CASSILAS','RICARDO KAKA','CHRISTIANO RONALDO','PELE','DIEGO MARADONA','WAYNE ROONERY','ROB VAN PERSIE','SERGIO BOSQUETS','KARIM BENZEMA','MESUT OZIL','MARIO BALOTELLI','DAVID BECKHAM','PAUL SCHOLES','ROSS TURNBILL','SERGIO AGUERO'];
-var Animals=['DOG','CAT','LION','MOUSE','ELEPHANT','HORSE','BEAR','ALLIGATOR','FOX','MONKEY','TIGER','LEOPARD','RAT','DEER','RHINOCEROS','CHEETAH','DINOSAUR','DRAGON','FISH','FROG','PANDA','GOAT','MULE','SHARK','SNAKE','TURTLE','BUFFALO','WOLF','ZEBRA'
-,'YAK','ZEBRA'];
-var Birds=['DUCK','PARROT','CROW','PENGUIN','HEN','OSTRICH','OWL','PHEASANT','PEACOCK','PIGEON','SPARROW','KIWI','GOOSE',
-'EAGLE','HUMMINGBIRD','MOUSEBIRD','DOVE','MANAKIN','WOODCREPPER','BAT'];
+
+    Fplayer = {
+
+	'words': ['FRANK LAMPARD','DIDIER DROGBA','PTR CECH','JUAN MATA','JOHN TERRY','BRANISLAV IVANOVIC','EDEN HAZARD','FERNANDO TORRES','ROBERT LEWANDOWISKI','DEMBA BA','DAVID LUIZ','VICTOR MOSES','ASHLEY COLE','PHILIP LAHM','THOMAS MULLER','LEONEL ANDRES MESSI','ANDRES INIESTA','XAVI','XABI ALONSO','PIQUE','VICTOR VALDES','IKER CASSILAS','RICARDO KAKA','CHRISTIANO RONALDO','PELE','DIEGO MARADONA','WAYNE ROONERY','ROB VAN PERSIE','SERGIO BOSQUETS','KARIM BENZEMA','MESUT OZIL','MARIO BALOTELLI','DAVID BECKHAM','PAUL SCHOLES','ROSS TURNBILL','SERGIO AGUERO'],
+	'group': 'Name of a Football Player'
+
+   }
+
+   Animals={
+
+	'words': ['DOG','CAT','LION','MOUSE','ELEPHANT','HORSE','BEAR','ALLIGATOR','FOX','MONKEY','TIGER','LEOPARD','RAT','DEER','RHINOCEROS','CHEETAH','DINOSAUR','DRAGON','FISH','FROG','PANDA','GOAT','MULE','SHARK','SNAKE','TURTLE','BUFFALO','WOLF','YAK','ZEBRA'],
+	'group': 'Name of an animal'
+
+   }
+
+
+   Birds = {
+
+	'words': ['DUCK','PARROT','CROW','PENGUIN','HEN','OSTRICH','OWL','PHEASANT','PEACOCK','PIGEON','SPARROW','KIWI','GOOSE','EAGLE','HUMMINGBIRD','MOUSEBIRD','DOVE','MANAKIN','WOODCREPPER','BAT'],
+	'group': 'Name of a Bird'
+
+  }
+
+
 var IPL=['RAJASTHAN ROYALS','CHENNAI SUPER KINGS','MUMBAI INDIANS','DELHI DAREDEVILS','KINGS XI PUNJAB','KOLKATA KNIGHT RIDERS','MUMBAI INDIANS','PUNE WARRIORS INDIA','SUNRISERS HYDERABAD'];
 var Novels=['ULYSSES','THE GREAT GATSBY','LOLITA','THE LORD OF THE RINGS','BRAVE NEW WORLD','THE SOUND AND THE FURY',
 'DARKNESS AT NOON','SONS AND LOVERS','THE GRAPES OF WRATH','UNDER THE VOLCANO','THE WAY OF ALL FLESH','TO KILL A MOCKINGBIRD',
@@ -48,6 +68,8 @@ var continent=['AFRICA','EUROPE','ASIA','NORTH AMERICA','SOUTH AMERICA','ANTARCT
 var band=['RAGE AGAINST THE MACHINE','METALLICA','RADIOHEAD','THE BEATLES','LED ZEPPELIN','PINK FLOYD','NIRVANA','IRON MAIDEN',
 'RED HOT CHILI PEPPERS','SYSTEM OF A DOWN','THE CLASH','PANTERA','BLACK SABBATH','LAMB OF GOD','THE DOORS','TOOL',
 'QUEENS OF THE STONE AGE','THE WHO','THE ROLLING STONES','LINKIN PARK' ];
+
+
 */
 
 // alphabets in an array for binding
@@ -73,7 +95,7 @@ $(document).ready(function () {
     $(".inputBtn").click(function() {
         j = 0;
 	this.setAttribute("disabled","disabled");
-	this.setAttribute("style","background-color:rgb(255,255,0)");
+	this.setAttribute("style","background-color:rgb(255,0,0)");
         hideIt(this.value);
         setValue(this.value, length);
         changeImage("#img");
@@ -107,6 +129,7 @@ function setValue(values, ln) {
 
     if (len >= ln) {
         $("#resultShow").val("Congrats! You won the game!!");
+	document.getElementById("img").setAttribute("style","background-color:lightgreen");
         $("#input").attr("disabled", "true");
         $("input").not("#restart").attr('disabled', 'true');
     }
@@ -127,6 +150,7 @@ function changeImage(values) {
         $(values).attr('src', "img/hang6.gif");
         $("#resultShow").val("Sorry !! The Correct word is :  "+ranfix);
         $("input").not("#restart").attr('disabled', 'true');
+	document.getElementById("img").setAttribute("style","background-color:red");
     }
 }
 
